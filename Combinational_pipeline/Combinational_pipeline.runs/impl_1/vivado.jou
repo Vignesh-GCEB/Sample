@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Fri Dec 12 19:04:20 2025
+# Process ID         : 26448
+# Current directory  : E:/Verilog/Combinational_pipeline/Combinational_pipeline.runs/impl_1
+# Command line       : vivado.exe -log top_module.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top_module.tcl -notrace
+# Log file           : E:/Verilog/Combinational_pipeline/Combinational_pipeline.runs/impl_1/top_module.vdi
+# Journal file       : E:/Verilog/Combinational_pipeline/Combinational_pipeline.runs/impl_1\vivado.jou
+# Running On         : LAPTOP-PA5SJ07B
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 7 5800HS with Radeon Graphics        
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16539 MB
+# Swap memory        : 16106 MB
+# Total Virtual      : 32645 MB
+# Available Virtual  : 8917 MB
+#-----------------------------------------------------------
+source top_module.tcl -notrace
