@@ -1,0 +1,26 @@
+/************************************************************************************************************************
+						     Hardware Modelling Series
+
+	Module Name : FA
+
+	File Name   : FA.v
+
+	Description : 1-bit full adder 
+
+	Engineer    : Vignesh
+	
+	History     : 26/FEB/2026
+
+***************************************************************************************************************************/
+
+module FA(
+	input    i_A,
+	input    i_B,
+	input    i_Cin
+	output   o_sum,
+	output   o_carry
+);
+
+	assign o_sum   = i_A ^ i_B ^i_Cin;
+	assign o_carry = (i_A&i_B) | i_Cin(i_A^i_B);
+endmodule
