@@ -1,6 +1,5 @@
-/************************************************************************************************************************
-						     Hardware Modelling Series
-
+/**********************************************************************************************************************
+							Hardware Modelling Series
 	Module Name : FA
 
 	File Name   : FA.v
@@ -13,14 +12,21 @@
 
 ***************************************************************************************************************************/
 
-module FA(
-	input    i_A,
-	input    i_B,
-	input    i_Cin
-	output   o_sum,
-	output   o_carry
-);
+'timescale 1ns/1ps
+'default_nettype none
 
+module FA(
+	input  wire   i_A,      // operand A
+	input  wire   i_B,	// operand B
+	input  wire   i_Cin,    // Carry input
+	output wire   o_sum,    // Sum output
+	output wire   o_carry   // Carry Output
+);	
+	// Sum equation : A ^ B ^ Carry input
 	assign o_sum   = i_A ^ i_B ^i_Cin;
-	assign o_carry = (i_A&i_B) | i_Cin(i_A^i_B);
+
+	// Carry Equation : AB + carry input(A^B)
+	assign o_carry = (i_A&i_B) | (i_Cin&(i_A^i_B));	
 endmodule
+
+'default_nettype wire
